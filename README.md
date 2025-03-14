@@ -15,6 +15,37 @@ The dataset used in this work is from the BraTS Challenge 2016 and 2017, consist
 Data/
  │── imagesTs.zip
  │── labelsTs.zip
- │── training set.txt
+ │── training set.txt 
+```
+## Install Dependencies 
+The model built and implemented on M1 ARM64 architecture supported Metal Backend for Acceleration. The below steps are followed to work on M1. Usage of NVIDIA GPU, create conda environment and execute the main model(final.py)
+### Create environment
+```bash
+brew install --cask miniconda
+conda init zsh
+source ~/.zshrc
+conda create -n {env-name} python=3.10
+conda activate {env-name}
+```
+### Install packages
+```bash
+conda install -c apple tensorflow-deps
+pip install tensorflow-macos tensorflow-metal
+pip install numpy nibabel scikit-learn matplotlib scipy tqdm monai
+```
+## Usage
+1. ### Training the Model
+To train the 3D U-Net model with cross-validation:
+```bash
+python final.py
+```
+2. ### Performing Predictions
+To generate predictions using the trained model:
+```bash
+python prediction_final.py
+```
 
-## Install Depencies
+## Acknowledgment 
+This project is intended for research purposes only. 
+BraTs - Menze, B. H., Jakab, A., Bauer, S., Kalpathy-Cramer, J., Farahani, K., Kirby, J., et al. (2015). The Multimodal Brain Tumor Image Segmentation Benchmark (BraTS). *IEEE Transactions on Medical Imaging, 34*(10), 1993-2024. https://doi.org/10.1109/TMI.2015.2467942
+Monai - https://github.com/Project-MONAI/tutorials
