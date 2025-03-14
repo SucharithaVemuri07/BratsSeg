@@ -1,0 +1,424 @@
+Last login: Thu Mar 13 21:59:22 on ttys002
+(base) sucharitha@sucharithas-MacBook-Air ~ % conda activate unet3d
+(unet3d) sucharitha@sucharithas-MacBook-Air ~ % python final.py      
+MONAI version: 1.4.0
+Numpy version: 1.26.4
+Pytorch version: 2.6.0
+MONAI flags: HAS_EXT = False, USE_COMPILED = False, USE_META_DICT = False
+MONAI rev id: 46a5272196a6c2590ca2589029eed8e4d56ff008
+MONAI __file__: /opt/homebrew/Caskroom/miniconda/base/envs/unet3d/lib/python3.10/site-packages/monai/__init__.py
+
+Optional dependencies:
+Pytorch Ignite version: NOT INSTALLED or UNKNOWN VERSION.
+ITK version: NOT INSTALLED or UNKNOWN VERSION.
+Nibabel version: 5.3.2
+scikit-image version: NOT INSTALLED or UNKNOWN VERSION.
+scipy version: 1.15.2
+Pillow version: 11.1.0
+Tensorboard version: 2.16.2
+gdown version: NOT INSTALLED or UNKNOWN VERSION.
+TorchVision version: NOT INSTALLED or UNKNOWN VERSION.
+tqdm version: 4.67.1
+lmdb version: NOT INSTALLED or UNKNOWN VERSION.
+psutil version: NOT INSTALLED or UNKNOWN VERSION.
+pandas version: NOT INSTALLED or UNKNOWN VERSION.
+einops version: NOT INSTALLED or UNKNOWN VERSION.
+transformers version: NOT INSTALLED or UNKNOWN VERSION.
+mlflow version: NOT INSTALLED or UNKNOWN VERSION.
+pynrrd version: NOT INSTALLED or UNKNOWN VERSION.
+clearml version: NOT INSTALLED or UNKNOWN VERSION.
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+Total training samples: 477
+Total training labels: 477
+Checking for Empty Labels: 100%|██████████████| 477/477 [05:11<00:00,  1.53it/s]
+Original samples: 477, Filtered samples: 450
+Image shape: torch.Size([4, 128, 128, 64])
+Label shape: torch.Size([3, 128, 128, 64])
+
+Fold 1 Starting...
+
+Epoch 1/12
+Training Fold 1, Epoch 1: 100%|███████████████████████████████████████████████████| 190/190 [05:41<00:00,  1.80s/it]
+Train Epoch 1, Train Loss: 1.1728
+Validating Fold 1, Epoch 1: 100%|███████████████████████████████████████████████████| 48/48 [01:21<00:00,  1.69s/it]
+Validation Dice: 0.0846, Validation Hausdorff: 82.6149
+New Best Dice: 0.0846 at Epoch 1
+
+Epoch 2/12
+Training Fold 1, Epoch 2: 100%|███████████████████████████████████████████████████| 190/190 [05:47<00:00,  1.83s/it]
+Train Epoch 2, Train Loss: 1.1149
+Validating Fold 1, Epoch 2: 100%|███████████████████████████████████████████████████| 48/48 [01:23<00:00,  1.73s/it]
+Validation Dice: 0.1167, Validation Hausdorff: 83.4937
+New Best Dice: 0.1167 at Epoch 2
+
+Epoch 3/12
+Training Fold 1, Epoch 3: 100%|███████████████████████████████████████████████████| 190/190 [06:06<00:00,  1.93s/it]
+Train Epoch 3, Train Loss: 1.0888
+Validating Fold 1, Epoch 3: 100%|███████████████████████████████████████████████████| 48/48 [01:25<00:00,  1.77s/it]
+Validation Dice: 0.1948, Validation Hausdorff: 80.6870
+New Best Dice: 0.1948 at Epoch 3
+
+Epoch 4/12
+Training Fold 1, Epoch 4: 100%|███████████████████████████████████████████████████| 190/190 [05:39<00:00,  1.79s/it]
+Train Epoch 4, Train Loss: 1.0206
+Validating Fold 1, Epoch 4: 100%|█████████████████████████████████████████████████████████████████| 48/48 [01:12<00:00,  1.51s/it]
+Validation Dice: 0.4487, Validation Hausdorff: 59.2011
+New Best Dice: 0.4487 at Epoch 4
+
+Epoch 5/12
+Training Fold 1, Epoch 5: 100%|█████████████████████████████████████████████████████████████████| 190/190 [05:36<00:00,  1.77s/it]
+Train Epoch 5, Train Loss: 0.8787
+Validating Fold 1, Epoch 5: 100%|█████████████████████████████████████████████████████████████████| 48/48 [01:08<00:00,  1.43s/it]
+Validation Dice: 0.5401, Validation Hausdorff: 41.3171
+New Best Dice: 0.5401 at Epoch 5
+
+Epoch 6/12
+Training Fold 1, Epoch 6: 100%|█████████████████████████████████████████████████████████████████| 190/190 [06:04<00:00,  1.92s/it]
+Train Epoch 6, Train Loss: 0.8001
+Validating Fold 1, Epoch 6: 100%|█████████████████████████████████████████████████████████████████| 48/48 [01:10<00:00,  1.47s/it]
+Validation Dice: 0.6286, Validation Hausdorff: 20.5751
+New Best Dice: 0.6286 at Epoch 6
+
+Epoch 7/12
+Training Fold 1, Epoch 7: 100%|█████████████████████████████████████████████████████████████████| 190/190 [06:19<00:00,  2.00s/it]
+Train Epoch 7, Train Loss: 0.7448
+Validating Fold 1, Epoch 7: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:08<00:00,  1.43s/it]
+Validation Dice: 0.5864, Validation Hausdorff: 29.2173
+
+Epoch 8/12
+Training Fold 1, Epoch 8: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:10<00:00,  1.95s/it]
+Train Epoch 8, Train Loss: 0.6926
+Validating Fold 1, Epoch 8: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:08<00:00,  1.43s/it]
+Validation Dice: 0.6594, Validation Hausdorff: 20.0734
+New Best Dice: 0.6594 at Epoch 8
+
+Epoch 9/12
+Training Fold 1, Epoch 9: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:11<00:00,  1.96s/it]
+Train Epoch 9, Train Loss: 0.6726
+Validating Fold 1, Epoch 9: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:05<00:00,  1.37s/it]
+Validation Dice: 0.6084, Validation Hausdorff: 24.2473
+
+Epoch 10/12
+Training Fold 1, Epoch 10: 100%|█████████████████████████████████████████████████████████████████████████| 190/190 [06:09<00:00,  1.94s/it]
+Train Epoch 10, Train Loss: 0.6334
+Validating Fold 1, Epoch 10: 100%|█████████████████████████████████████████████████████████████████████████| 48/48 [01:04<00:00,  1.34s/it]
+Validation Dice: 0.6705, Validation Hausdorff: 16.8430
+New Best Dice: 0.6705 at Epoch 10
+
+Epoch 11/12
+Training Fold 1, Epoch 11: 100%|█████████████████████████████████████████████████████████████████████████| 190/190 [06:10<00:00,  1.95s/it]
+Train Epoch 11, Train Loss: 0.6250
+Validating Fold 1, Epoch 11: 100%|█████████████████████████████████████████████████████████████████████████| 48/48 [01:04<00:00,  1.35s/it]
+Validation Dice: 0.6680, Validation Hausdorff: 19.7608
+
+Epoch 12/12
+Training Fold 1, Epoch 12: 100%|█████████████████████████████████████████████████████████████████████████| 190/190 [06:13<00:00,  1.96s/it]
+Train Epoch 12, Train Loss: 0.6407
+Validating Fold 1, Epoch 12: 100%|█████████████████████████████████████████████████████████████████████████| 48/48 [01:05<00:00,  1.37s/it]
+Validation Dice: 0.6495, Validation Hausdorff: 20.2758
+
+Fold 2 Starting...
+
+Epoch 1/12
+Training Fold 2, Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [05:55<00:00,  1.87s/it]
+Train Epoch 1, Train Loss: 0.6037
+Validating Fold 2, Epoch 1: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:02<00:00,  1.29s/it]
+Validation Dice: 0.6570, Validation Hausdorff: 16.4724
+
+Epoch 2/12
+Training Fold 2, Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:23<00:00,  2.02s/it]
+Train Epoch 2, Train Loss: 0.5984
+Validating Fold 2, Epoch 2: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:05<00:00,  1.37s/it]
+Validation Dice: 0.6611, Validation Hausdorff: 19.8457
+
+Epoch 3/12
+Training Fold 2, Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:12<00:00,  1.96s/it]
+Train Epoch 3, Train Loss: 0.5955
+Validating Fold 2, Epoch 3: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:02<00:00,  1.31s/it]
+Validation Dice: 0.6384, Validation Hausdorff: 14.2151
+
+Epoch 4/12
+Training Fold 2, Epoch 4: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:10<00:00,  1.95s/it]
+Train Epoch 4, Train Loss: 0.5691
+Validating Fold 2, Epoch 4: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:04<00:00,  1.34s/it]
+Validation Dice: 0.5989, Validation Hausdorff: 20.4769
+
+Epoch 5/12
+Training Fold 2, Epoch 5: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:18<00:00,  1.99s/it]
+Train Epoch 5, Train Loss: 0.5713
+Validating Fold 2, Epoch 5: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:03<00:00,  1.32s/it]
+Validation Dice: 0.6415, Validation Hausdorff: 15.6370
+
+Epoch 6/12
+Training Fold 2, Epoch 6: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:12<00:00,  1.96s/it]
+Train Epoch 6, Train Loss: 0.5898
+Validating Fold 2, Epoch 6: 100%|██████████████████████████████████████████████████████████████████████████| 48/48 [01:02<00:00,  1.29s/it]
+Validation Dice: 0.6305, Validation Hausdorff: 18.6066
+
+Epoch 7/12
+Training Fold 2, Epoch 7: 100%|██████████████████████████████████████████████████████████████████████████| 190/190 [06:27<00:00,  2.04s/it]
+Train Epoch 7, Train Loss: 0.5911
+Validating Fold 2, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:03<00:00,  1.31s/it]
+Validation Dice: 0.6745, Validation Hausdorff: 14.2665
+New Best Dice: 0.6745 at Epoch 7
+
+Epoch 8/12
+Training Fold 2, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:14<00:00,  1.97s/it]
+Train Epoch 8, Train Loss: 0.5809
+Validating Fold 2, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:05<00:00,  1.36s/it]
+Validation Dice: 0.7219, Validation Hausdorff: 12.5861
+New Best Dice: 0.7219 at Epoch 8
+
+Epoch 9/12
+Training Fold 2, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:14<00:00,  1.97s/it]
+Train Epoch 9, Train Loss: 0.5743
+Validating Fold 2, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:03<00:00,  1.32s/it]
+Validation Dice: 0.6194, Validation Hausdorff: 22.9154
+
+Epoch 10/12
+Training Fold 2, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 190/190 [06:07<00:00,  1.94s/it]
+Train Epoch 10, Train Loss: 0.5759
+Validating Fold 2, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 48/48 [01:03<00:00,  1.32s/it]
+Validation Dice: 0.5768, Validation Hausdorff: 24.5576
+
+Epoch 11/12
+Training Fold 2, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 190/190 [06:24<00:00,  2.02s/it]
+Train Epoch 11, Train Loss: 0.5722
+Validating Fold 2, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 48/48 [01:07<00:00,  1.40s/it]
+Validation Dice: 0.6368, Validation Hausdorff: 18.7287
+
+Epoch 12/12
+Training Fold 2, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 190/190 [06:18<00:00,  1.99s/it]
+Train Epoch 12, Train Loss: 0.5734
+Validating Fold 2, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 48/48 [01:04<00:00,  1.34s/it]
+Validation Dice: 0.6650, Validation Hausdorff: 19.1520
+
+Fold 3 Starting...
+
+Epoch 1/12
+Training Fold 3, Epoch 1: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:16<00:00,  1.98s/it]
+Train Epoch 1, Train Loss: 0.5392
+Validating Fold 3, Epoch 1: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:12<00:00,  1.50s/it]
+Validation Dice: 0.6612, Validation Hausdorff: 20.5500
+
+Epoch 2/12
+Training Fold 3, Epoch 2: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:25<00:00,  2.03s/it]
+Train Epoch 2, Train Loss: 0.5558
+Validating Fold 3, Epoch 2: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:06<00:00,  1.39s/it]
+Validation Dice: 0.6637, Validation Hausdorff: 17.5857
+
+Epoch 3/12
+Training Fold 3, Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:31<00:00,  2.06s/it]
+Train Epoch 3, Train Loss: 0.5699
+Validating Fold 3, Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:07<00:00,  1.42s/it]
+Validation Dice: 0.7004, Validation Hausdorff: 13.7840
+
+Epoch 4/12
+Training Fold 3, Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:29<00:00,  2.05s/it]
+Train Epoch 4, Train Loss: 0.5748
+Validating Fold 3, Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:06<00:00,  1.39s/it]
+Validation Dice: 0.6519, Validation Hausdorff: 19.1686
+
+Epoch 5/12
+Training Fold 3, Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:35<00:00,  2.08s/it]
+Train Epoch 5, Train Loss: 0.5606
+Validating Fold 3, Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:08<00:00,  1.43s/it]
+Validation Dice: 0.6479, Validation Hausdorff: 18.9919
+
+Epoch 6/12
+Training Fold 3, Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [06:38<00:00,  2.10s/it]
+Train Epoch 6, Train Loss: 0.5489
+Validating Fold 3, Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:03<00:00,  1.32s/it]
+Validation Dice: 0.6894, Validation Hausdorff: 15.1764
+
+Epoch 7/12
+Training Fold 3, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [05:55<00:00,  1.87s/it]
+Train Epoch 7, Train Loss: 0.5629
+Validating Fold 3, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:02<00:00,  1.31s/it]
+Validation Dice: 0.6856, Validation Hausdorff: 12.4020
+
+Epoch 8/12
+Training Fold 3, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [05:45<00:00,  1.82s/it]
+Train Epoch 8, Train Loss: 0.5375
+Validating Fold 3, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [00:59<00:00,  1.23s/it]
+Validation Dice: 0.6584, Validation Hausdorff: 18.8145
+
+Epoch 9/12
+Training Fold 3, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 190/190 [05:49<00:00,  1.84s/it]
+Train Epoch 9, Train Loss: 0.5611
+Validating Fold 3, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 48/48 [01:03<00:00,  1.32s/it]
+Validation Dice: 0.6444, Validation Hausdorff: 18.7231
+
+Epoch 10/12
+Training Fold 3, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 190/190 [05:55<00:00,  1.87s/it]
+Train Epoch 10, Train Loss: 0.5612
+Validating Fold 3, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 48/48 [01:01<00:00,  1.29s/it]
+Validation Dice: 0.6606, Validation Hausdorff: 13.5972
+
+Epoch 11/12
+Training Fold 3, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 190/190 [06:01<00:00,  1.90s/it]
+Train Epoch 11, Train Loss: 0.5528
+Validating Fold 3, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 48/48 [01:02<00:00,  1.30s/it]
+Validation Dice: 0.6812, Validation Hausdorff: 17.4248
+
+Epoch 12/12
+Training Fold 3, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 190/190 [06:25<00:00,  2.03s/it]
+Train Epoch 12, Train Loss: 0.5600
+Validating Fold 3, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 48/48 [01:04<00:00,  1.34s/it]
+Validation Dice: 0.6994, Validation Hausdorff: 15.0264
+
+Fold 4 Starting...
+
+Epoch 1/12
+Training Fold 4, Epoch 1: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:01<00:00,  1.89s/it]
+Train Epoch 1, Train Loss: 0.5512
+Validating Fold 4, Epoch 1: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [00:59<00:00,  1.26s/it]
+Validation Dice: 0.7289, Validation Hausdorff: 12.5031
+New Best Dice: 0.7289 at Epoch 1
+
+Epoch 2/12
+Training Fold 4, Epoch 2: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [05:50<00:00,  1.83s/it]
+Train Epoch 2, Train Loss: 0.5622
+Validating Fold 4, Epoch 2: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:02<00:00,  1.32s/it]
+Validation Dice: 0.6251, Validation Hausdorff: 29.6248
+
+Epoch 3/12
+Training Fold 4, Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [05:54<00:00,  1.85s/it]
+Train Epoch 3, Train Loss: 0.5560
+Validating Fold 4, Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [00:59<00:00,  1.27s/it]
+Validation Dice: 0.6421, Validation Hausdorff: 13.5526
+
+Epoch 4/12
+Training Fold 4, Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:19<00:00,  1.99s/it]
+Train Epoch 4, Train Loss: 0.5384
+Validating Fold 4, Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:03<00:00,  1.36s/it]
+Validation Dice: 0.6944, Validation Hausdorff: 19.3900
+
+Epoch 5/12
+Training Fold 4, Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:28<00:00,  2.03s/it]
+Train Epoch 5, Train Loss: 0.5506
+Validating Fold 4, Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:03<00:00,  1.35s/it]
+Validation Dice: 0.6828, Validation Hausdorff: 19.3279
+
+Epoch 6/12
+Training Fold 4, Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:16<00:00,  1.97s/it]
+Train Epoch 6, Train Loss: 0.5860
+Validating Fold 4, Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:03<00:00,  1.34s/it]
+Validation Dice: 0.7749, Validation Hausdorff: 10.1846
+New Best Dice: 0.7749 at Epoch 6
+
+Epoch 7/12
+Training Fold 4, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [07:16<00:00,  2.28s/it]
+Train Epoch 7, Train Loss: 0.5675
+Validating Fold 4, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [00:57<00:00,  1.22s/it]
+Validation Dice: 0.7059, Validation Hausdorff: 11.5314
+
+Epoch 8/12
+Training Fold 4, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [21:52<00:00,  6.87s/it]
+Train Epoch 8, Train Loss: 0.5651
+Validating Fold 4, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [00:51<00:00,  1.09s/it]
+Validation Dice: 0.7287, Validation Hausdorff: 11.5630
+
+Epoch 9/12
+Training Fold 4, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [18:01<00:00,  5.66s/it]
+Train Epoch 9, Train Loss: 0.5464
+Validating Fold 4, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [00:56<00:00,  1.21s/it]
+Validation Dice: 0.7487, Validation Hausdorff: 14.8575
+
+Epoch 10/12
+Training Fold 4, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 191/191 [05:51<00:00,  1.84s/it]
+Train Epoch 10, Train Loss: 0.5370
+Validating Fold 4, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 47/47 [00:56<00:00,  1.21s/it]
+Validation Dice: 0.7364, Validation Hausdorff: 14.0911
+
+Epoch 11/12
+Training Fold 4, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 191/191 [05:35<00:00,  1.76s/it]
+Train Epoch 11, Train Loss: 0.5458
+Validating Fold 4, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 47/47 [00:58<00:00,  1.25s/it]
+Validation Dice: 0.7087, Validation Hausdorff: 13.5595
+
+Epoch 12/12
+Training Fold 4, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 191/191 [06:04<00:00,  1.91s/it]
+Train Epoch 12, Train Loss: 0.5554
+Validating Fold 4, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 47/47 [01:02<00:00,  1.33s/it]
+Validation Dice: 0.7548, Validation Hausdorff: 13.2788
+
+Fold 5 Starting...
+
+Epoch 1/12
+Training Fold 5, Epoch 1: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:27<00:00,  2.03s/it]
+Train Epoch 1, Train Loss: 0.5645
+Validating Fold 5, Epoch 1: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:04<00:00,  1.37s/it]
+Validation Dice: 0.6865, Validation Hausdorff: 22.2141
+
+Epoch 2/12
+Training Fold 5, Epoch 2: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:18<00:00,  1.98s/it]
+Train Epoch 2, Train Loss: 0.5673
+Validating Fold 5, Epoch 2: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:02<00:00,  1.32s/it]
+Validation Dice: 0.7107, Validation Hausdorff: 12.4841
+
+Epoch 3/12
+Training Fold 5, Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:18<00:00,  1.98s/it]
+Train Epoch 3, Train Loss: 0.5467
+Validating Fold 5, Epoch 3: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:04<00:00,  1.37s/it]
+Validation Dice: 0.7246, Validation Hausdorff: 8.5774
+
+Epoch 4/12
+Training Fold 5, Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:24<00:00,  2.01s/it]
+Train Epoch 4, Train Loss: 0.5389
+Validating Fold 5, Epoch 4: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:04<00:00,  1.38s/it]
+Validation Dice: 0.7227, Validation Hausdorff: 17.7141
+
+Epoch 5/12
+Training Fold 5, Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:34<00:00,  2.06s/it]
+Train Epoch 5, Train Loss: 0.5427
+Validating Fold 5, Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:07<00:00,  1.43s/it]
+Validation Dice: 0.7041, Validation Hausdorff: 19.6555
+
+Epoch 6/12
+Training Fold 5, Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:32<00:00,  2.05s/it]
+Train Epoch 6, Train Loss: 0.5577
+Validating Fold 5, Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:05<00:00,  1.39s/it]
+Validation Dice: 0.6786, Validation Hausdorff: 16.4032
+
+Epoch 7/12
+Training Fold 5, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:33<00:00,  2.06s/it]
+Train Epoch 7, Train Loss: 0.5453
+Validating Fold 5, Epoch 7: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:04<00:00,  1.37s/it]
+Validation Dice: 0.7214, Validation Hausdorff: 13.1146
+
+Epoch 8/12
+Training Fold 5, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:31<00:00,  2.05s/it]
+Train Epoch 8, Train Loss: 0.5518
+Validating Fold 5, Epoch 8: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:05<00:00,  1.39s/it]
+Validation Dice: 0.7123, Validation Hausdorff: 19.8498
+
+Epoch 9/12
+Training Fold 5, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 191/191 [06:30<00:00,  2.04s/it]
+Train Epoch 9, Train Loss: 0.5297
+Validating Fold 5, Epoch 9: 100%|███████████████████████████████████████████████████████████████████████████████████| 47/47 [01:05<00:00,  1.40s/it]
+Validation Dice: 0.7305, Validation Hausdorff: 14.7812
+
+Epoch 10/12
+Training Fold 5, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 191/191 [06:28<00:00,  2.04s/it]
+Train Epoch 10, Train Loss: 0.5359
+Validating Fold 5, Epoch 10: 100%|██████████████████████████████████████████████████████████████████████████████████| 47/47 [01:05<00:00,  1.39s/it]
+Validation Dice: 0.7448, Validation Hausdorff: 14.0993
+
+Epoch 11/12
+Training Fold 5, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 191/191 [06:23<00:00,  2.01s/it]
+Train Epoch 11, Train Loss: 0.5480
+Validating Fold 5, Epoch 11: 100%|██████████████████████████████████████████████████████████████████████████████████| 47/47 [01:04<00:00,  1.38s/it]
+Validation Dice: 0.7178, Validation Hausdorff: 14.8625
+
+Epoch 12/12
+Training Fold 5, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 191/191 [06:15<00:00,  1.97s/it]
+Train Epoch 12, Train Loss: 0.5415
+Validating Fold 5, Epoch 12: 100%|██████████████████████████████████████████████████████████████████████████████████| 47/47 [00:59<00:00,  1.26s/it]
+Validation Dice: 0.7049, Validation Hausdorff: 19.4545
+
+Training complete. Best Dice found: 0.7749 at epoch 6 in Fold 4
+(unet3d) sucharitha@sucharithas-MacBook-Air ~ % 
