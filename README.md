@@ -11,7 +11,8 @@ The training procedure includes **five-fold cross-validation** to improve genera
 ## Dataset
 The dataset used in this work is from the BraTS Challenge 2016 and 2017, consisting of multi-modal MRI images and corresponding labels. The train and test data is stored in the Data folder. Download the training data from the text file which consists of two folders - imagesTr(samples) and labelsTr(labels), additionally imagesTs and labelsTs are test samples, labels derived from the train set manually.
 Structure
-Data/
-- │── imagesTs.zip
-  │── labelsTs.zip
-  │── training set.txt
+
+- Data/
+-  │── imagesTs.zip
+-  │── labelsTs.zip
+-  │── training set.txt
