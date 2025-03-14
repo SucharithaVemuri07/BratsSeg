@@ -16,3 +16,5 @@ Data/
  │── imagesTs.zip
  │── labelsTs.zip
  │── training set.txt
+
+## Install Depencies
